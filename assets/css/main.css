@@ -1,0 +1,299 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+}
+header .headerContainer {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  height: 100px;
+}
+header .headerContainer .headerLogoDiv {
+  display: flex;
+  align-items: center;
+}
+header .headerContainer .dropdownn .dropdownMenuBtn {
+  border: none;
+  font-size: 24px;
+  background-color: transparent;
+  color: black;
+  padding-top: 10px;
+  display: none;
+}
+header .headerContainer .headerNavv {
+  display: flex;
+  width: 80%;
+  justify-content: end;
+}
+header .headerContainer .headerNavv .navBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+}
+header .headerContainer .headerNavv .navBox a {
+  text-decoration: none;
+  color: #1E1E27;
+}
+header .headerFirstDiv {
+  width: 100%;
+  display: flex;
+  background-color: #1E1E27;
+  justify-content: space-around;
+  margin: auto;
+}
+header .headerFirstDiv .freeShopping p {
+  padding-top: 10px;
+  color: #E3E3E3;
+}
+header .headerFirstDiv .countryDiv {
+  display: flex;
+  gap: 10px;
+  padding-top: 10px;
+}
+header .headerFirstDiv .countryDiv .dropdownBox .dropdownUl i {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+header .headerFirstDiv .countryDiv .dropdownBox .headerDropdown {
+  background-color: transparent;
+  border: none;
+  color: #E3E3E3;
+}
+
+main .mainSection {
+  background-image: url(/assets/img/slider_1.jpg);
+  width: 100%;
+  min-height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main .mainSection .container {
+  margin-top: 30px;
+  padding-top: 30px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  min-height: 400px;
+  justify-content: center;
+}
+main .mainSection .container .mainSectionText {
+  gap: 20px;
+  width: 60%;
+  font-weight: lighter;
+  margin-top: 30px;
+  padding-top: 30px;
+}
+main .mainSection .container .mainSectionText h2 {
+  font-size: 70px;
+  margin-top: 30px;
+}
+main .mainSection .container .mainSectionText button {
+  background-color: #FE4C50;
+  border: none;
+  border-radius: 6px;
+  padding: 11px;
+  width: 140px;
+  font-size: 14px;
+  margin-top: 30px;
+  color: white;
+  font-weight: bolder;
+}
+main .catalogSection {
+  margin-top: 30px;
+  padding-top: 30px;
+}
+main .catalogSection .container .row .catalogDiv img {
+  max-width: 100%;
+}
+main .catalogSection .container .row .catalogDiv .womanDivText {
+  background-color: rgb(255, 255, 255);
+  width: 40%;
+  height: 45px;
+  text-align: center;
+  padding: auto;
+  font-weight: bolder;
+  position: relative;
+  top: 110px;
+  left: 90px;
+  padding-top: 10px;
+  top: -150px;
+}
+main .apiSection {
+  width: 100%;
+}
+main .apiSection .container {
+  width: 80%;
+}
+main .apiSection .container .arrival {
+  text-align: center;
+}
+main .bestSellersSection {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+main .bestSellersSection .container .bestsellerText {
+  text-align: center;
+  margin-bottom: 30px;
+}
+main .bestSellersSection .container .row .productCart {
+  border: 1px solid rgb(236, 236, 236);
+  text-align: center;
+}
+main .bestSellersSection .container .row .productCart span {
+  color: red;
+  font-weight: bolder;
+}
+main .latestBlog .container .latestblogText {
+  text-align: center;
+  margin-bottom: 30px;
+}
+main .formSection {
+  margin-top: 30px;
+  padding-top: 30px;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  background-color: #E3E3E3;
+  min-height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .formSection .container {
+  margin: auto;
+}
+main .formSection .container .row {
+  display: flex;
+}
+main .formSection .container .row .newsletter {
+  display: flex;
+  flex-direction: column;
+}
+main .formSection .container .row .newsletter span {
+  color: gray;
+}
+main .formSection .container .row .newsletter .homeForm {
+  padding-top: 15px;
+}
+main .formSection .container .row .newsletter .homeForm input {
+  border: none;
+  background-color: white;
+  padding: 10px;
+  width: 70%;
+}
+main .formSection .container .row .newsletter .homeForm button {
+  border: none;
+  background-color: #FE4C50;
+  color: white;
+  padding: 9px;
+}
+
+footer .container .row .footerBox {
+  display: flex;
+  justify-content: space-around;
+  color: gray;
+}
+footer .container .row .socialmedia {
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+  color: gray;
+}
+footer .container .end {
+  margin-top: 30px;
+  padding-top: 30px;
+  color: gray;
+}
+
+@media screen and (max-width: 600px) {
+  header .headerFirstDiv {
+    display: none;
+  }
+  header .headerContainer .headerNavv {
+    display: none;
+  }
+  header .headerContainer .myDropdown {
+    display: block;
+  }
+}
+.myDropdown {
+  display: none;
+  font-size: 26px;
+  border: none;
+  padding-top: 30px;
+}
+.myDropdown ul li a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+.myDropdown .button {
+  border: none;
+  color: white;
+}
+
+#productList {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#productList .boxDiv {
+  width: 29%;
+  border: 2px solid #FE4C50;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+}
+#productList .boxDiv .addtobasket {
+  border: 2px solid #FE4C50;
+  color: #FE4C50;
+  padding: 7px;
+  border-radius: 7px;
+  background-color: transparent;
+}
+#productList .boxDiv .addtowishlist {
+  border: 2px solid #FE4C50;
+  color: #FE4C50;
+  background-color: transparent;
+  padding: 10px;
+  border-radius: 7px;
+}
+#productList .boxDiv img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+table {
+  border: 2px solid gray;
+  width: 500px;
+}
+
+table tr {
+  border: 2px solid gray;
+}
+
+td img {
+  width: 100px;
+  height: 100px;
+}
+
+td {
+  width: 40%;
+  border: 2px solid gray;
+}
